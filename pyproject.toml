@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macacos-mordedores"
+version = "0.1.0"
+description = "Análise/classificação de macacos mordedores"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # copie aqui o conteúdo do requirements.txt, ex.:
+    # "pandas>=2.0",
+    # "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "ipykernel",
+    "pytest",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
