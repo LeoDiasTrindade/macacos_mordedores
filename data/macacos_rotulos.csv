@@ -1,41 +1,41 @@
-﻿numero,arquivo,conjunto,rotulo,rotulo_numero
-1,../data/macaco_01.png,validação,morde,1
-2,../data/macaco_02.png,validação,morde,1
-3,../data/macaco_03.png,validação,não morde,0
-4,../data/macaco_04.png,validação,não morde,0
-5,../data/macaco_05.png,validação,morde,1
-6,../data/macaco_06.png,validação,morde,1
-7,../data/macaco_07.png,validação,não morde,0
-8,../data/macaco_08.png,validação,não morde,0
-9,../data/macaco_09.png,validação,morde,1
-10,../data/macaco_10.png,validação,morde,1
-11,../data/macaco_11.png,validação,não morde,0
-12,../data/macaco_12.png,validação,não morde,0
-13,../data/macaco_13.png,validação,morde,1
-14,../data/macaco_14.png,validação,morde,1
-15,../data/macaco_15.png,validação,morde,1
-16,../data/macaco_16.png,validação,morde,1
-17,../data/macaco_17.png,validação,morde,1
-18,../data/macaco_18.png,validação,morde,1
-19,../data/macaco_19.png,validação,não morde,0
-20,../data/macaco_20.png,validação,não morde,0
-21,../data/macaco_21.png,teste,não morde,0
-22,../data/macaco_22.png,teste,não morde,0
-23,../data/macaco_23.png,teste,não morde,0
-24,../data/macaco_24.png,teste,não morde,0
-25,../data/macaco_25.png,teste,não morde,0
-26,../data/macaco_26.png,teste,não morde,0
-27,../data/macaco_27.png,teste,não morde,0
-28,../data/macaco_28.png,teste,morde,1
-29,../data/macaco_29.png,teste,não morde,0
-30,../data/macaco_30.png,teste,não morde,0
-31,../data/macaco_31.png,teste,não morde,0
-32,../data/macaco_32.png,teste,não morde,0
-33,../data/macaco_33.png,teste,morde,1
-34,../data/macaco_34.png,teste,morde,1
-35,../data/macaco_35.png,teste,morde,1
-36,../data/macaco_36.png,teste,morde,1
-37,../data/macaco_37.png,teste,não morde,0
-38,../data/macaco_38.png,teste,não morde,0
-39,../data/macaco_39.png,teste,não morde,0
-40,../data/macaco_40.png,teste,não morde,0
+﻿numero,arquivo,rotulo,rotulo_numero
+1,../data/macaco_01.png,morde,1
+2,../data/macaco_02.png,morde,1
+3,../data/macaco_03.png,não morde,0
+4,../data/macaco_04.png,não morde,0
+5,../data/macaco_05.png,morde,1
+6,../data/macaco_06.png,morde,1
+7,../data/macaco_07.png,não morde,0
+8,../data/macaco_08.png,não morde,0
+9,../data/macaco_09.png,morde,1
+10,../data/macaco_10.png,morde,1
+11,../data/macaco_11.png,não morde,0
+12,../data/macaco_12.png,não morde,0
+13,../data/macaco_13.png,morde,1
+14,../data/macaco_14.png,morde,1
+15,../data/macaco_15.png,morde,1
+16,../data/macaco_16.png,morde,1
+17,../data/macaco_17.png,morde,1
+18,../data/macaco_18.png,morde,1
+19,../data/macaco_19.png,não morde,0
+20,../data/macaco_20.png,não morde,0
+21,../data/macaco_21.png,não morde,0
+22,../data/macaco_22.png,não morde,0
+23,../data/macaco_23.png,não morde,0
+24,../data/macaco_24.png,não morde,0
+25,../data/macaco_25.png,não morde,0
+26,../data/macaco_26.png,não morde,0
+27,../data/macaco_27.png,não morde,0
+28,../data/macaco_28.png,morde,1
+29,../data/macaco_29.png,não morde,0
+30,../data/macaco_30.png,não morde,0
+31,../data/macaco_31.png,não morde,0
+32,../data/macaco_32.png,não morde,0
+33,../data/macaco_33.png,morde,1
+34,../data/macaco_34.png,morde,1
+35,../data/macaco_35.png,morde,1
+36,../data/macaco_36.png,morde,1
+37,../data/macaco_37.png,não morde,0
+38,../data/macaco_38.png,não morde,0
+39,../data/macaco_39.png,não morde,0
+40,../data/macaco_40.png,não morde,0

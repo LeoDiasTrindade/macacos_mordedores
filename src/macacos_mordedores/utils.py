@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 
 TAMANHO = 4
 PASTA_IMAGENS = '../data'
@@ -41,8 +42,7 @@ def mostrar_macaco_como_a_arvore_ve(macaco='macaco_01'):
     plt.tight_layout()
     plt.show()
 
-def montar_conjunto(macacos, nome_conjunto):
-    subset = macacos[macacos.conjunto == nome_conjunto]
+def montar_conjunto(subset):
     X = np.array([carregar_como_numeros(c) for c in subset.arquivo])
     y = subset.rotulo_numero.to_numpy()
     numeros = subset.numero.tolist()
@@ -185,10 +185,16 @@ def usando_o_modelo_com_macacos_de_teste(modelo, macacos, X_teste, y_teste, nume
 
     return pontuacao
 
-def carregar_dados():
+def carregar_dados(test_size=0.5, random_state=24):
     macacos = pd.read_csv(f'{PASTA_IMAGENS}/macacos_rotulos.csv')
 
-    X_val, y_val, num_val = montar_conjunto(macacos, "validação")
-    X_teste, y_teste, num_teste = montar_conjunto(macacos, "teste")
+    treino, teste = train_test_split(
+        macacos,
+        test_size=0.5,
+        shuffle=False,
+    )
 
-    return macacos, X_val, y_val, num_val, X_teste, y_teste, num_teste
+    X_treino, y_treino, num_treino = montar_conjunto(treino)
+    X_teste, y_teste, num_teste = montar_conjunto(teste)
+
+    return macacos, X_treino, y_treino, num_treino, X_teste, y_teste, num_teste
