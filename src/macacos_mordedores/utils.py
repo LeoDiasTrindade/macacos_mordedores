@@ -78,13 +78,13 @@ def gerar_arvore(modelo):
         texto.set_text("\n".join(linhas))
 
 
-def criando_modelo(X_validacao, y_validacao, MAX_PERGUNTAS):
+def criando_modelo(X_treino, y_treino, MAX_PERGUNTAS):
     modelo = DecisionTreeClassifier(
         max_depth=MAX_PERGUNTAS,
         random_state=24,
         class_weight={0: 1, 1: 1}
     )
-    modelo.fit(X_validacao, y_validacao)
+    modelo.fit(X_treino, y_treino)
     print("Árvore treinada com os macacos de validação")
 
     gerar_arvore(modelo)
