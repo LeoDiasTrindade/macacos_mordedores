@@ -53,11 +53,18 @@ def gerar_arvore(modelo):
                            for i in range(TAMANHO * TAMANHO)]
 
     plt.figure(figsize=(16, 8))
-    anotacoes = plot_tree(modelo, filled=True, rounded=True,
+    anotacoes = plot_tree(modelo, filled=False, rounded=True,
             class_names=["não morde", "morde"],
             feature_names=nomes_das_perguntas,
-            fontsize=12, impurity=False, proportion=True,
+            fontsize=12, impurity=False, proportion=False,
             label='none')
+
+    # Remove a linha da classe nos nós que não são folha
+    for anot in anotacoes:
+        linhas = anot.get_text().split('\n')
+        if '<=' in linhas[0]:      # é nó de decisão (tem condição), não folha
+            anot.set_text('\n'.join(linhas[:-1]))  # tira a última linha (nome da classe)
+
 
     def converte_limiar(match):
         valor = float(match.group(1)) * 255

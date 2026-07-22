@@ -18,6 +18,6 @@ Este repositório contém também a versão em código Python mostrando como um 
 <br><br><br>
 ---
 
-Atividade "Jogo do Macaco Bom / Macaco Mau" adaptada de IA Desplugada, de Annabel Lindner e Stefan
+Atividade "Macacos Mordedores" adaptada de IA Desplugada, de Annabel Lindner e Stefan
 Seegerer (Friedrich-Alexander-Universität Erlangen-Nürnberg), tradução de Ricardo Lima Praciano de Sousa.
 Disponível em https://www.aiunplugged.org — licenciado sob CC BY-NC 3.0.
